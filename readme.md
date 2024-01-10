@@ -19,7 +19,7 @@ Realicé pruebas exhaustivas en diversos dispositivos y tamaños de pantalla par
 Adjunto algunas capturas de pantalla para demostrar la adaptabilidad del diseño en ambos layouts.
 
 - **Layout Móvil:**
-  ![Layout Móvil](https://i.imgur.com/WwAlE24.png)
+  ![Layout Móvil](https://i.imgur.com/vCT7MSO.png)
 
 - **Layout de Tablet:**
   ![Layout de Tablet](https://i.imgur.com/3nOh6wB.jpeg)
