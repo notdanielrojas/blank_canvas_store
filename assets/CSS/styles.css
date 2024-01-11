@@ -137,10 +137,6 @@ nav {
   width: 270px;
 }
 
-.filter-value {
-  padding-left: 10px;
-}
-
 @media (min-width: 576px) {
   .filter-select select {
     width: 100px;
@@ -149,8 +145,12 @@ nav {
 
 @media (min-width: 992px) {
   .filter-select select {
-    width: 800px;
+    width: 700px;
   }
+}
+
+.filter-value {
+  padding-left: 10px;
 }
 
 /* Main */
