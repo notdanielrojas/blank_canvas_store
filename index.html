@@ -5,63 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blank Canvas Store</title>
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/2d17dbbe16.js"
-      crossorigin="anonymous"
-    ></script>
-      <!-- Thumbnail -->
-      <meta property="og:title" content="Blank Canvas Store" />
-      <meta property="og:image" content="https://i.imgur.com/o0ogj9l.png" />
-      <meta property="og:description" content="Blank Canvas Store" />
-      <meta
-        property="og:url"
-        content="https://notdanielrojas.github.io/blank_canvas_store/"
-      />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="627" />
-      <meta property="og:type" content="website" />
+    <script src="https://kit.fontawesome.com/2d17dbbe16.js" crossorigin="anonymous"></script>
+    <!-- Thumbnail -->
+    <meta property="og:title" content="Blank Canvas Store" />
+    <meta property="og:image" content="https://i.imgur.com/o0ogj9l.png" />
+    <meta property="og:description" content="Blank Canvas Store" />
+    <meta property="og:url" content="https://notdanielrojas.github.io/blank_canvas_store/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
     <!-- Favicon -->
-    <link
-    rel="icon"
-    href="./assets/img/favicon.ico"
-    type="image/x-icon"
-    sizes="48x48"
-  />
-  <link
-    rel="shortcut icon"
-    href="./assets/img/favicon.ico"
-    type="image/x-icon"
-    sizes="48x48"
-  />
-  <link
-    rel="icon"
-    href="./assets/img/favicon-16x16.png"
-    type="image/png"
-    sizes="16x16"
-  />
-  <link
-    rel="icon"
-    href="./assets/img/favicon-32x32.png"
-    type="image/png"
-    sizes="32x32"
-  />
-  <link
-    rel="icon"
-    href="./assets/img/android-chrome-192x192.png"
-    type="image/png"
-    sizes="192x192"
-  />
-  <link
-    rel="icon"
-    href="./assets/img/android-chrome-512x512.png"
-    type="image/png"
-    sizes="512x512"
-  />
-  <link
-    rel="apple-touch-icon"
-    href="./assets/img/apple-touch-icon.png"
-    sizes="180x180"
-  />
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" sizes="48x48" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" sizes="48x48" />
+    <link rel="icon" href="./assets/img/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="./assets/img/android-chrome-192x192.png" type="image/png" sizes="192x192" />
+    <link rel="icon" href="./assets/img/android-chrome-512x512.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png" sizes="180x180" />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/CSS/normalize.css" />
     <link rel="stylesheet" href="./assets/CSS/global.css" />
@@ -83,8 +43,14 @@
               <li>Contacto</li>
             </ul>
           </div>
-          <div class="nav-menu-icon">
+          <div class="nav-menu-icon" id="menu-icon">
             <i class="fa-solid fa-bars" style="color: #292929"></i>
+          </div>
+          <div class="menu-display">
+            <div class="menu-options">
+              <a href="#">Opción 1</a>
+              <a href="#">Opción 2</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -166,7 +132,10 @@
           <!-- Card 6 -->
           <div class="card">
             <div class="card-image">
-              <img src="./assets/img/girl-mountain.jpg" alt="Pintura de el alma de una mujer en la montaña en acuarela." />
+              <img
+                src="./assets/img/girl-mountain.jpg"
+                alt="Pintura de el alma de una mujer en la montaña en acuarela."
+              />
             </div>
             <div class="card-info">
               <p>Alma de la Montaña</p>
@@ -227,5 +196,27 @@
         ></a>
       </footer>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuIcon = document.getElementById("menu-icon");
+        const menuOptions = document.querySelector(".menu-options");
+        const menuDisplayOff = document.querySelector(".menu-display");
+
+        menuIcon.addEventListener("click", () => {
+          menuIcon.querySelector("i").classList.toggle("fa-bars");
+          menuIcon.querySelector("i").classList.toggle("fa-times");
+
+          menuOptions.classList.toggle("show-menu");
+
+          if (menuOptions.classList.contains("show-menu")) {
+            menuDisplayOff.classList.remove("menu-display");
+          } else {
+            menuDisplayOff.classList.add("menu-display");
+          }
+
+          menuDisplayOff.classList.toggle("show-menu");
+        });
+      });
+    </script>
   </body>
 </html>
