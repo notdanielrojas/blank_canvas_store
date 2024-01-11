@@ -6,13 +6,12 @@ nav {
 
 .nav-info {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 0px 20px 0px 20px;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 @media (min-width: 576px) {
@@ -30,26 +29,26 @@ nav {
 }
 
 .nav-logo img {
-  width: 50px;
+  width: 5rem;
 }
 
 @media (min-width: 576px) {
   .nav-logo img {
-    width: 100px;
+    width: 10rem;
   }
 }
 
 @media (min-width: 992px) {
   .nav-logo img {
-    width: 300px;
-    padding: 30px;
+    width: 30rem;
+    padding: 3rem;
   }
 }
 
 .nav-menu ul {
   display: none;
-  padding-left: 265px;
-  gap: 30px;
+  padding-left: 26.5rem;
+  gap: 3rem;
   list-style: none;
 }
 
@@ -66,8 +65,8 @@ nav {
 @media (min-width: 992px) {
   .nav-menu ul {
     flex-direction: column;
-    gap: 20px;
-    padding: 0px;
+    gap: 2rem;
+    padding: 0rem;
   }
 }
 
@@ -94,7 +93,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   height: auto;
   width: auto;
 }
@@ -118,7 +117,7 @@ nav {
   justify-content: space-around;
   grid-area: filter;
   background-color: #dcdcdc;
-  padding: 10px 0px 20px 0px;
+  padding: 1rem 0rem 2rem 0rem;
   width: 100%;
 }
 
@@ -134,23 +133,23 @@ nav {
 }
 
 .filter-select select {
-  width: 270px;
+  width: 27rem;
 }
 
 @media (min-width: 576px) {
   .filter-select select {
-    width: 100px;
+    width: 10rem;
   }
 }
 
 @media (min-width: 992px) {
   .filter-select select {
-    width: 700px;
+    width: 70rem;
   }
 }
 
 .filter-value {
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 /* Main */
@@ -166,7 +165,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 90px auto 50px;
+  grid-template-rows: 5rem 9rem auto 5rem;
   grid-template-areas:
     "nav"
     "filter"
@@ -178,8 +177,8 @@ main {
 
 @media (min-width: 576px) {
   .grid-container {
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 5rem auto 5rem;
     grid-template-areas:
       "nav nav"
       "filter main"
@@ -189,8 +188,8 @@ main {
 
 @media (min-width: 992px) {
   .grid-container {
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 90px auto 50px;
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 9rem auto 5rem;
     grid-template-areas:
       "nav filter"
       "nav main"
@@ -205,8 +204,8 @@ main {
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr);
-  padding: 32px;
-  row-gap: 20px;
+  padding: 3.2rem;
+  row-gap: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -216,7 +215,7 @@ main {
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
+    gap: 2rem;
   }
 }
 
@@ -236,23 +235,23 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 0px 20px 0px;
+  padding: 2rem 0rem 2rem 0rem;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.6rem;
+  box-shadow: 0rem 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
 .card-image img {
-  width: 150px;
-  height: 200px;
+  width: 15rem;
+  height: 20rem;
 }
 
 .card-info {
   display: flex;
   flex-direction: column;
   font-weight: light;
-  padding: 10px 0px 5px 0px;
+  padding: 1rem 0rem 0.5rem 0rem;
 }
 
 .card-info p {
@@ -262,17 +261,17 @@ main {
 .card-button {
   outline: 0;
   cursor: pointer;
-  padding: 5px 16px;
-  font-size: 14px;
+  padding: 0.5rem 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 2rem;
   vertical-align: middle;
-  border: 1px solid;
-  border-radius: 6px;
+  border: 0.1rem solid;
+  border-radius: 0.6rem;
   color: #24292e;
   background-color: #fafbfc;
   border-color: #1b1f2326;
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  box-shadow: rgba(27, 31, 35, 0.04) 0rem 0.1rem 0rem 0rem, rgba(255, 255, 255, 0.25) 0px 0.1rem 0rem 0rem inset;
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: color, background-color, border-color;
   :hover {
@@ -288,7 +287,7 @@ main {
 
 /* Pagination */
 .pagination {
-  padding: 20px 0px 50px 0px;
+  padding: 2rem 0rem 5rem 0rem;
 }
 
 .pagination ul {
@@ -298,32 +297,32 @@ main {
 }
 
 .pagination ul li {
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 @media (min-width: 576px) {
   .pagination ul li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
 @media (min-width: 992px) {
   .pagination ul li {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
 .pagination ul li a {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   background: #efefef;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.6rem;
+  box-shadow: 0rem 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
 .pagination ul li a:hover {
@@ -347,5 +346,5 @@ footer {
 }
 
 footer i {
-  padding: 0px 10px 0px 10px;
+  padding: 0rem 1rem 0rem 1rem;
 }
