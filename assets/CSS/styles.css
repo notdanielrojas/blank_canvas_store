@@ -75,6 +75,7 @@ nav {
   position: relative;
   display: none;
 }
+
 .show-menu {
   display: inherit;
   position: absolute;
@@ -96,6 +97,7 @@ nav {
   height: auto;
   width: auto;
 }
+
 .menu-options a {
   width: 11.5rem;
   padding: 1rem 2rem;
